@@ -1,0 +1,150 @@
+:root {
+    --color-green: #4adf86;
+    --color-light-green: #379e60;
+    --color-white: #ffffff;
+    --color-blue: #1f2937;
+    --color-light-blue: #2f3e53;
+    --color-grey: #d5d4d8;
+}
+
+body {
+    background: var(--color-blue);
+    color: var(--color-white);
+
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 800;
+    
+    letter-spacing: -0.025em;
+    text-align: left;
+}
+.container {
+    width: 550px;
+    margin: 0 auto;
+    padding: 115px 52px;
+}
+
+.green {
+    color: var(--color-green);
+}
+
+.blue {
+    color: var(--color-blue);
+}
+
+.title {
+    margin-bottom: 10px;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -0.025em;
+}
+
+.subtitle {
+    margin-bottom: 100px;
+    color: var(--color-grey);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#subtitle-slider{
+    margin-bottom: 20px;
+    color: var(--color-grey);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button {
+    background: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--color-light-green);
+}
+
+hr {
+    border: 1px solid var(--color-light-blue);
+    margin: 35px 0;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass {
+    background: var(--color-light-blue);
+    padding: 5px 16px;
+    margin-bottom: 35px;
+    width: 46%;
+    height: 32px;
+    border-radius: 6px;
+    font-family: "Inter";
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.slidecontainer {
+    width: 200px;
+    height: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: var(--color-light-blue); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+    transition: opacity 0.2s;
+    margin-top: -10px;
+    border-radius: 6px;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #04aa6d; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 6px;
+}
